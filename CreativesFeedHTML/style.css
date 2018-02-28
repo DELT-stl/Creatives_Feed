@@ -421,6 +421,7 @@ td{
 .image-contain {
 	/* object-fit: cover; */
 	max-width:100%;
+	z-index:-2;
 }
 
 .padding-0 {
@@ -444,13 +445,15 @@ td{
 .cat {
 	margin:auto;
 	padding-top:30px;
-	/* display:inline-block; */
+	width:100%;
 }
 .cat li {
   display:block;
 	max-width:60%;
+  padding-top: 15px;
+	padding-bottom: 15px;
 	margin:auto;
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .cat li a {
@@ -469,19 +472,145 @@ td{
 	font-family: "objektiv-mk1";
 	position:absolute;
 	color:white;
-	top:25%;
+	width:75%;
+
 	left:5%;
-	line-height: 100%;
-	width:60%;
+}
+.large-font {
+	font-family: "objektiv-mk1";
+	font-size: 2.8vw;
+	color:white;
+	line-height:100%;
 	font-weight:bold;
 }
 
-.marker {
-	font-size: 0.5vw;
-	top: 60%;
+.medium-font {
+	font-family: "objektiv-mk1";
+	color:white;
+	font-size: 36px;
 }
 
-.readmore {
-	top: 65%;
-	font-size: 1vw;
+.small-font {
+	font-family: "objektiv-mk1";
+	color:white;
+	font-size: 16px;
+}
+.top {
+	top: 5%;
+	left: 5%;
+	padding-top:15px;
+	padding-bottom:15px;
+	margin:auto;
+}
+
+.middle {
+	top:25%;
+	left:5%;
+	padding-top:15px;
+	padding-bottom:15px;
+	margin:auto;
+}
+
+.bottom {
+	left:5%;
+	bottom:10%;
+	padding-top:15px;
+	padding-bottom:15px;
+	margin:auto;
+}
+
+.has-padding {
+	padding-bottom:100px;
+}
+
+.blog-thumbnail {
+	width:100%;
+	width:200%;
+  margin-left:-50%;
+}
+
+.blog-row {
+	height:40%;
+	overflow-y: hidden;
+}
+
+.overflow-hide {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.blog-preview {
+	width:90%;
+	margin:auto;
+}
+
+.homepage-overlay {
+	top:25%;
+}
+
+.readmore h3 {
+	list-style: none;
+	font-size: 25px;
+	line-height: 30px;
+	padding: 5px 10px;
+	z-index:5;
+
+}
+.readmore h3 a {
+	color: #141414;
+	text-transform: uppercase;
+	position: relative !important;
+	font-family: 'airfare';
+}
+.readmore h3 a:after {
+	position: absolute;
+	width: 80%;
+	bottom: 0;
+	left: 0;
+	background: #03fc96;
+	height: 55%;
+	content: '';
+	z-index: -1;
+	margin-left: -5px;
+	transition: .2s ease;
+}
+.readmore h3 a:hover:after {
+	width: 100%
+}
+
+/*
+.cat li {
+	list-style: none;
+	font-size: 25px;
+	line-height: 30px;
+	padding: 5px 10px;
+
+}
+.cat li a {
+	color: #141414;
+	text-transform: uppercase;
+	position: relative;
+	font-family: 'airfare'
+}
+.cat li a:after {
+	position: absolute;
+	width: 80%;
+	bottom: 0;
+	left: 0;
+	background: #03fc96;
+	height: 55%;
+	content: '';
+	z-index: -1;
+	margin-left: -5px;
+	transition: .2s ease;
+}
+.cat li a:hover:after {
+	width: 100%
+}
+ */
+
+@media (min-width: 1462px) {
+	.container {
+		width: 1600px;
+	}
 }
