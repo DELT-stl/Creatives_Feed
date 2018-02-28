@@ -30,7 +30,7 @@ body {
 	-webkit-text-size-adjust: 100%;
 	color: #141414;
 	line-height: 29px;
-	background: #f4f4f4;
+	/* background: #f4f4f4; */
 	font-family: "objektiv-mk1" !important;
 }
 h1 span {
@@ -423,8 +423,65 @@ td{
 	max-width:100%;
 }
 
-.sidebar li {
-	padding-bottom:10px;
-	padding-top:10px;
+.padding-0 {
+	padding-left:0;
+	padding-right:0;
+}
 
+.sidebar li {
+	padding-bottom:5px;
+	padding-top:5px;
+  z-index: 2;
+	font-family: "objektiv-mk1";
+}
+
+.sidebar {
+	z-index: 1;
+	background-color: #f5f5f5;
+	margin-right:0px;
+}
+
+.cat {
+	margin:auto;
+	padding-top:30px;
+	display:inline-block;
+}
+.cat li {
+  display:block;
+	max-width:60%;
+	margin:auto;
+	 font-size: 0.8vw;
+}
+
+.cat li a {
+	font-family: "objektiv-mk1" !important;
+
+}
+.allcat {
+	color: #03fc96;
+	text-transform: uppercase;
+	font-family: "objektiv-mk1";
+	font-size: 0.7vw !important;
+	font-weight: bold;
+}
+
+.text-overlay {
+	font-family: "objektiv-mk1";
+	position:absolute;
+	color:white;
+	top:25%;
+	left:5%;
+	line-height: 100%;
+	width:60%;
+	font-weight:bold;
+}
+
+.marker {
+	font-size: 0.5vw;
+	top: 60%;
+}
+
+.readmore {
+	top: 65%;
+	font-size: 1vw;
 }
