@@ -450,7 +450,7 @@ td{
   display:block;
 	max-width:60%;
 	margin:auto;
-	 font-size: 0.8vw;
+	 font-size: 16px;
 }
 
 .cat li a {
@@ -461,7 +461,7 @@ td{
 	color: #03fc96;
 	text-transform: uppercase;
 	font-family: "objektiv-mk1";
-	font-size: 0.7vw !important;
+	font-size: 12px !important;
 	font-weight: bold;
 }
 
